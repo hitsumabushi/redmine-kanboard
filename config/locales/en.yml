@@ -1,0 +1,4 @@
+# English strings go here for Rails i18n
+en:
+  notice_update_success: "Update setting"
+  notice_update_fail: "Failed to save setting"

@@ -1,0 +1,11 @@
+<% kanboard = Kanboard.where(:project_id => @project.id).first || Kanboard.new(:project_id => @project.id) %>
+<%= form_tag(update_kanboards_path(@project), :method => :put, :class => "tabular") do %>
+	<div class="box tabular">
+	<p>
+	<label>URL</label>
+	<%= text_field_tag :url, kanboard.url, :size => 80 %>
+	</p>
+	</div>
+	<%= submit_tag l(:button_save) %>
+<% end %>
+
