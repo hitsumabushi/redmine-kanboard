@@ -19,6 +19,7 @@ It's very instinctive tool and suittable tool for Kanban methodology.
 3. Clone this repository
     ```
     git clone https://github.com/hitsumabushi/redmine-kanboard.git
+    rake redmine:plugins:migrate RAILS_ENV=production
     ```
 4. Restart redmine.
 5. Login redmine and open project.
